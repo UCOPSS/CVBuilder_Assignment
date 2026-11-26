@@ -1,0 +1,134 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef1f5;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+.cv-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.cv-header {
+    text-align: center;
+    border-bottom: 3px solid #223b62;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.cv-header h1 {
+    color: #223b62;
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.job-title {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.contact-info {
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    color: #223b62;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    line-height: 1.7;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+.detail-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #333;
+}
+
+.detail-subtitle {
+    color: #555;
+    margin-top: 5px;
+}
+
+.skills {
+    line-height: 1.9;
+}
+
+.actions {
+    max-width: 850px;
+    margin: 25px auto;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    background: #223b62;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-secondary {
+    background: #555;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Print / Save as PDF */
+@media print {
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .cv-container {
+        max-width: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .actions {
+        display: none;
+    }
+
+    .section {
+        break-inside: avoid;
+    }
+}

@@ -1,0 +1,21 @@
+
+# Maven build output
+target/
+
+# NetBeans private configuration
+nbproject/private/
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local secrets
+.env
+.env.*
